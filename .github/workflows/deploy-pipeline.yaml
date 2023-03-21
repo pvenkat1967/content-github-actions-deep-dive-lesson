@@ -60,4 +60,7 @@ jobs:
         body: New release for ${{ github.sha }}. Release notes can be found in the docs.
         draft: false
         prerelease: false
+    - name: list env variable
+      run: |
+          echo ${secrets.github_token}
     
